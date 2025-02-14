@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab4 – Exercise 2</title>
+</head>
+<body>
+<h1>JavaScript Lab</h1>
+<script>
+function add (a, b) {
+    return ((a)+(b))
+}
+function subtract (a, b) {
+    return ((a)-(b))
+}
+console.log("add(5, 3):", add(5, 3));
+console.log("subtract(10, 4):", subtract(10, 4))
+
+// default functions for add and substract
+
+function addDefault (a, b=0) {
+    return ((a)+(b))
+}
+
+function subtractDefault (a, b=1) {    //default parameter value of b is 1 hence it should show 9
+    return ((a)-(b))
+}
+
+// tesing default parameters 
+console.log("addDefault(5):", addDefault(5));
+console.log("subtractDefault(10):", subtractDefault(10));
+
+// Implementing Arrow Functions
+const addArrow = (a, b) => ((a) + (b));
+        const subtractArrow = (a, b) => ((a) - (b));
+        const multiply = (a, b) => ((a) * (b));
+        const divide = (a, b) => b !== 0 ? ((a) / (b)) : "Error: Division by zero";
+
+        console.log("addArrow(8, 2):", addArrow(8, 2));
+        console.log("subtractArrow(15, 5):", subtractArrow(15, 5));
+        console.log("multiply(6, 7):", multiply(6, 7));
+        console.log("divide(20, 4):", divide(20, 4));
+        console.log("divide(10, 0):", divide(10, 0));
+
+        // Understanding Callback Functions
+        function calculator(a, b, operation) {
+            return operation(a, b);
+        }
+
+        console.log("calculator(3, 7, addArrow):", calculator(3, 7, addArrow));
+        console.log("calculator(9, 2, multiply):", calculator(9, 2, multiply));
+
+</script>
+</body>
+</html>
