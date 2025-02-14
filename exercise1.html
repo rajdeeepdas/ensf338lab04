@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 – Exercise 1</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+        // Write your JavaScript code here
+        console.log ("Variable Declaration");
+        let a = 100;
+        let b = 10;
+        const c = 25;
+        console.log (a);
+        console.log (b);
+        console.log (c);
+        a = 250;
+        //c = 20;
+        console.log (a);
+        console.log (b);
+        console.log (c);
+
+
+        console.log ("String Operations");
+        let string1 = "Hello, World!";
+        let string2 = "JavaScript is fun!";
+        console.log (string1.length);
+        let result = string1.concat(" ",string2);
+        console.log (result);
+        let result2 = string2.replace("fun" , "awesome");
+        console.log (result2);
+
+
+        console.log ("String Templates");
+        let name = "Alice";
+        let age = 25;
+        let result3 = `My name is ${name} and I am ${age} years old`;
+        console.log (result3);
+
+        
+        console.log ("Working with Dates");
+        const d = new Date();
+        console.log (d);
+        console.log (d.getFullYear());
+        console.log ((d.getMonth()+1));
+        console.log (d.getDay());
+        const days_array = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        console.log (days_array[d.getDay()]);
+
+    </script>
+</body>
+</html>
